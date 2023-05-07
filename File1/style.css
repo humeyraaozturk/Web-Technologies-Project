@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+}
+/*! base css end */
+
+body{
+    font-family: 'Electrolize',sans-serif;
+    height: 100vh;
+}
+
+.navbar{
+    background-color: black;
+    height: 60px;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.featured-content{
+    background: url("images/background.jpg");
+    padding: 50px;
+    height: calc(100vh - 150px);
+    background-size: 100% 100%;
+}
+
+.featured-title{
+    width: 700px;
+}
+
+.featured-desc{
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 10px;
+    margin: 30px 0;
+    color: black;
+}
+
+.navbar-wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 50px;
+}
+
+.menu-list{
+    display: flex;
+    list-style: none;
+    column-gap: 30px;
+}
+
+.menu-list-item{
+    cursor: pointer;
+}
+
+.menu-list-item:hover{
+    font-weight: bold;
+}
+
+.menu-list-item.active{
+    font-weight: bold;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.profile-picture{
+    width: 32px;
+    height: 32px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.profile-text-container{
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+    line-height: 1;
+}
+
+.toggle{
+    width: 40px;
+    height: 20px;
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.toggle-icon{
+    color: goldenrod;
+}
+
+.toggle-ball{
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    right: 1px;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .5s ese ease all;
+}
