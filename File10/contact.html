@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İletişim</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="home.html" class="active">Hakkımda</a>
+        <a href="resume.html">Özgeçmiş</a>
+        <a href="mycity.html">Şehrim</a>
+        <a href="legacy.html">Mirasımız</a>
+        <a href="interest.html">İlgi Alanlarım</a>
+        <a href="contact.html">İletişim</a>
+        <div class="profile-container">
+          <img class="profile-picture" src="images/profile.jpg" alt="" />
+          <div class="profile-text-container">
+            <span class="profile-text">Hesabım</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="connect">
+      <form action="showdata.html" name="Form" onsubmit="return empty()">
+        <div class="form-group">
+          <label for="name" id="bicim">İsim :</label>
+          <input
+            type="text"
+            name="name"
+            class="form-control"
+            placeholder="İsminizi girin."
+          />
+          <small class="form-text text-muted">Zorunlu alan</small>
+        </div>
+        <div class="form-group">
+          <label for="soyisim" id="bicim">Soyisim :</label>
+          <input
+            type="text"
+            name="surname"
+            class="form-control"
+            placeholder="Soyisminizi girin."
+          />
+          <small class="form-text text-muted">Zorunlu alan</small>
+        </div>
+        <div class="form-group">
+          <label for="email" id="bicim">Email :</label>
+          <input
+            type="text"
+            name="email"
+            class="form-control"
+            placeholder="Emailinizi girin."
+          />
+          <small class="form-text text-muted">Zorunlu alan</small>
+        </div>
+        <div class="form-group">
+          <label for="message" id="bicim">Eklemek İstedikleriniz :</label>
+          <textarea
+            name="message"
+            id="message"
+            rows="5"
+            class="form-control"
+            placeholder="İletmek istediğiniz mesaj varsa yazınız."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="adres" id="bicim">Adres :</label>
+          <textarea
+            name="adres"
+            id="adres"
+            rows="5"
+            class="form-control"
+            placeholder="Size ulaşabilmemiz için tam adresinizi girebilirsiniz."
+          ></textarea>
+        </div>
+        <div class="form-group">
+          <label for="date" id="bicim">Doğum Tarihiniz :</label>
+          <input type="date" name="date" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label for="combobox" id="bicim"> Yaşadığınız Şehir :</label>
+          <select name="sehir">
+            <option selected>Seçiniz</option>
+            <option>İstanbul</option>
+            <option>Ankara</option>
+            <option>İzmir</option>
+            <option>Adana</option>
+            <option>Antalya</option>
+            <option>Gaziantep</option>
+            <option>Bursa</option>
+            <option>Samsun</option>
+            <option>Konya</option>
+            <option>Eskişehir</option>
+            <option>Şanlıurfa</option>
+            <option>Adıyaman</option>
+            <option>Ordu</option>
+            <option>Kayseri</option>
+            <option>Erzurum</option>
+            <option>Kahramanmaraş</option>
+            <option>Şırnak</option>
+            <option>Diyarbakır</option>
+            <option>Kırıkkale</option>
+            <option>Artvin</option>
+            <option>Trabzon</option>
+            <option>Aksaray</option>
+            <option>Mersin</option>
+            <option>Ardahan</option>
+            <option>Sivas</option>
+            <option>Denizli</option>
+            <option>Malatya</option>
+            <option>Tekirdağ</option>
+            <option>Bilecik</option>
+            <option>Bartın</option>
+            <option>Batman</option>
+            <option>Muş</option>
+            <option>Yalova</option>
+            <option>Giresun</option>
+            <option>Zonguldak</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="radio" id="bicim">Cinsiyetinizi giriniz :</label>
+          <input type="radio" name="cinsiyet" value="Kadın" />kadın
+          <input type="radio" name="cinsiyet" value="Erkek" />erkek
+        </div>
+        <button
+          class="btn-clear"
+          type="reset"
+          id="submit"
+          name="submit"
+          value="Reset"
+          onclick="check()"
+        >
+          Temizle
+        </button>
+        <button class="btn-send" type="submit" id="sub">Gönder</button>
+      </form>
+    </div>
+    <script>
+      function empty() {
+        var x = document.forms["Form"]["name"].value;
+        var y = document.forms["Form"]["email"].value;
+        var z = document.forms["Form"]["soyisim"].value;
+
+        if (x == "" && y == "" && z == "") {
+          alert("İsim, soyisim ve mail kısmı boş bırakılamaz.");
+          return false;
+        }
+
+        if (x == "" && y == "") {
+          alert("İsim ve mail kısmı boş bırakılamaz.");
+          return false;
+        }
+
+        if (x == "") {
+          alert("İsim boş bırakılamaz .");
+          return false;
+        }
+
+        if (y == "") {
+          alert("Mail kısmı boş bırakılamaz .");
+          return false;
+        }
+
+        if (z == "") {
+          alert("Soyisim boş bırakılamaz .");
+          return false;
+        }
+
+        //deneme@gmail.com veya deneme@edu.tr
+        var forMail =
+          /^[a-zA-z0-9\.\]+@[a-z]+(.[a-z0-9]+)?\.[a-z]{2,}(.[a-z0-9]{2})?$/;
+        if (forMail.test(y) == false) {
+          alert("Mail adresinizi doğru giriniz! ");
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
