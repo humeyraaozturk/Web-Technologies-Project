@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>İlgi Alanlarım</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Owl Stylesheets -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css" />
+    <link
+      rel="stylesheet"
+      href="owlcarousel/assets/owl.theme.default.min.css"
+    />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <style>
+      #map {
+        height: 100rem;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="home.html">Hakkımda</a>
+        <a href="resume.html">Özgeçmiş</a>
+        <a href="mycity.html">Şehrim</a>
+        <a href="legacy.html">Mirasımız</a>
+        <a href="interest.html" class="active">İlgi Alanlarım</a>
+        <a href="contact.html">İletişim</a>
+        <div class="profile-container">
+          <img class="profile-picture" src="images/profile.jpg" alt="" />
+          <div class="profile-text-container">
+            <span class="profile-text">Hesabım</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <div class="owl-carousel owl-theme">
+      <div class="item0"></div>
+      <div class="item1">
+        <h1>Kahve Nedir?</h1>
+        <p>
+          Coffea cinsinden meyvelerin tohumları olan kavrulmuş kahvenin
+          çekirdeklerinden hazırlanır. Bitki, Afrika’ya özgüdür – özellikle
+          Etiyopya ve Sudan bölgelerine. Demlendiğinde içecek koyu, acı ve hafif
+          asidiktir ve kafein içeriğinden uyarıcı bir etkiye sahiptir. Yeşil
+          kahve demlenince, hafif çiçeksi aromalı, taze tada sahip oluyor. Damak
+          tadına ve tercihe göre krema, süt, tereyağı, yumurta, tuz veya şeker
+          ile servis edilir. Son zamanlarda buzlu kahveler ve hatta oda
+          sıcaklığında kahveler de popüler hale gelmesine rağmen, genellikle
+          sıcak servis edilir.
+        </p>
+      </div>
+      <div class="item2">
+        <h1>Latte</h1>
+        <p>
+          Latte, İtalyanca ‘süt’ anlamına geliyor. Bu yüzden sipariş verirken
+          latte değil de Cafe Latte demek mantıklı. Cafe Latte, fincanınızın
+          büyüklüğüne göre 1 ya da 2 shot espresso üzerine ısıtılmış süt
+          eklenmesiyle hazırlanıyor. Üzerine isteğe bağlı biraz süt köpüğü ilave
+          ediliyor. Kahveye henüz alışamamış olanlar içimi yumuşak olduğundan
+          daha çok bu kahve çeşidini tercih ediyor. Baristaların espressonun
+          üzerine döktükleri sütle çeşitli şekiller ortaya çıkardıkları ‘latte
+          sanatı’ bu kahve ile hazırlanıyor.
+        </p>
+      </div>
+      <div class="item3">
+        <h1>Americano</h1>
+        <p>
+          Americano kahve, bir veya iki shot espressonun üzerine kaynar su
+          eklenmesiyle hazırlanıyor ve espresso ile filtre kahve arası bir tat
+          sunuyor. Espressodan daha yumuşak ama filtre kahveden daha sert bir
+          aroma elde ediliyor. Filtre kahveye alışmış Amerikan askerleri, II.
+          Dünya Savaşı sırasında İtalya’da espresso kahveyle tanışmışlar. Sert,
+          yoğun ve miktarca az gelen bu kahveyi üzerine kaynar su ekleterek
+          tüketmişler. Adını buradan alıyor.
+        </p>
+      </div>
+      <div class="item4">
+        <h1>Filtre Kahve</h1>
+        <p>
+          Filtre kahve, orta çekilmiş kahvenin bir filtreden süzülen su
+          yardımıyla demlenmesiyle elde edilen bir kahve çeşidi. Benim en
+          sevdiğim kahve türü aynı zamanda. Espressodan farklı olarak kahve bir
+          filtre kağıdına veya metal filtreye konuyor ve su yavaş bir şekilde
+          damlatılarak bu kahvenin içirisinden geçirtiliyor.
+        </p>
+      </div>
+      <div class="item5">
+        <h1>Türk Kahvesi</h1>
+        <p>
+          Türk Kahvesi, kahve üretmediği halde bir ürünü kendine özgü bir
+          pişirim tekniğiyle hazırlayıp kendi kültürü ile özdeşleştirmiş bir
+          kahve çeşidi. Kendisine has kahve öğütme yöntemiyle ince çekilmiş
+          kahveyle hazırlanan Türk kahvesi, kendine özel bardağı ve yanında
+          lokum ve suyla servis ediliyor. Telveli olan bu kahve türü şekerli,
+          şekersiz ve bol köpüklü olarak tercih ediliyor.
+        </p>
+      </div>
+    </div>
+    <div class="owl-carousel owl-theme">
+      <div class="item6"></div>
+      <div class="item7">
+        <h1>Inception</h1>
+        <p>
+          Leonardo DiCaprio bu yapımda, çok yetenekli bir hırsız olan "Dom Cobb
+          " ile karşımızda. Uzmanlık alanı, zihnin en karanlık ve savunmasız
+          olduğu rüya görme anında, bilinçaltının derinliklerindeki değerli
+          sırları çekip çıkarmak ve onları çalmaktır. Cobb'un bu nadir
+          insanlarda görülebilecek yeteneği, bu ender rastgelinebilecek
+          mahareti, onu kurumsal casusluğun tehlikeli yeni dünyasında aranan bir
+          oyuncu yapmıştır. Aynı zamanda bu durum onu uluslararası bir kaçak
+          yapmış ve sevdiği herşeye malolmuştur. Cobb'a içinde bulunduğu
+          durumdan kurtulmasını sağlayacak bir fırsat sunulur. Ona hayatını geri
+          verebilecek son bir iş; tabi eğer imkansız 'başlangıç'ı
+          tamamlayabilirse. Mükemmel soygun yerine, Cobb ve takımındaki
+          profesyoneller bu sefer tam tersini yapmak zorundadır; görevleri bir
+          fikri çalmak değil onu yerleştirmektir. Eğer başarırlarsa, mükemmel
+          suç bu olacaktır.
+        </p>
+      </div>
+      <div class="item8">
+        <h1>Shutter Island</h1>
+        <p>
+          Zindan Adası, Martin Scorsese'nin bir çok filmi gibi yine bir başyapıt
+          statüsünde. Filmde, Teddy Daniels ve Chuck Aule isimli iki polis
+          memurunun, Rachel Solando adlı bir akıl hastasının ortadan kaybolması
+          üzerine tehlikeli akıl hastalarının tedavi gördüğü Shutter Adası
+          isimli bölgede konuşlanan Ashecliffe Hastanesi'ne soruşturma yapmak
+          için gitmesi ve sonradan gelişen esrarengiz olaylar aktarılıyor.
+          Burada karşılaştıkları isyan tablosu ve çığrından çıkan işler bu
+          davayı gittikçe zora sokacak, zamanla rüya ve gerçek arasındaki
+          sınırlar zorlanacaktır. Usta yönetmen Martin Scorsese tarafından
+          Dennis Lehane'nin ünlü romanından sinemaya uyarlanan filmin başrolünde
+          yönetmenin gözde oyuncularından Leonardo Di Caprio bulunuyor.
+        </p>
+      </div>
+      <div class="item9">
+        <h1>Batı Cephesinde Yeni Bir Şey Yok</h1>
+        <p>
+          Batı Cephesinde Yeni Bir Şey Yok, Birinci Dünya Savaşı sırasında Batı
+          Cephesi'nde savaşan bir Alman askerinin hikayesini konu ediyor.
+          Savaşın ilk günlerinde coşkuyla siperlerde yer alan Paul ve silah
+          arkadaşları, savaş devam ettikçe kendilerini korku ve büyük bir
+          çaresizliğin içinde bulur.
+        </p>
+      </div>
+      <div class="item10">
+        <h1>Avengers - Endgame</h1>
+        <p>
+          "Avengers Infinity War"un ardından pek çok süper kahraman küle
+          dönüşmüştür. Doktor Strange, Gamora, Drax, Mantis, genç Örümcek Adam,
+          Black Panther, Bucky Barnes, Groot, Scarlet Witch, Vision, Star Lord,
+          Maria Hill, The Wasp ve Nick Fury gibi pek çok kahraman, Thanos'un
+          Sonsuzluk Eldiveni'ni ele geçirmesi ve kendi dengesini kurması
+          yüzünden yok olmuştur ve dünya umutsuz haldedir. Dünya üzerinde kalan
+          Black Widow, Kaptan Amerika, Thor ve Hulk kendi yaslarını
+          tutmaktayken, Iron ve Nebula ise kontrol edemedikleri bir uzay
+          gemisinin içinde, uzay boşluğunda sürüklenmektedirler. Süper
+          kahramanlar takımı için işler pek de iyi görünmemektedir. Ancak
+          Kuantum Bölgesi'nden çıkmanın bir yolunu bularak Avengers ekibinin
+          kalan üyelerine giden Ant-Man, yeni bir umut ışığı olacaktır. Daha
+          önce var olduğunu bilmedikleri bölgeler, kahramanlar ve evrenlerin
+          varlığını öğrenen ekip, Thanos'un kurduğu bu çarpık dengeyi
+          değiştirmek ve kendilerinden alınanı geri getirmek için hayatlarının
+          en büyük mücadelesine girişeceklerdir. Hepsi kişisel olarak önem
+          verdikleri şeyleri kaybetmiş olan kahramanlarımız için intikam vakti
+          gelmiştir.
+        </p>
+      </div>
+      <div class="item11">
+        <h1>The Power Of The Dog</h1>
+        <p>
+          Thomas Savage’ın aynı adlı romanından uyarlanan The Power of the Dog,
+          Montana’da geniş bir çiftliğe sahip olan iki kardeşin hikayesini konu
+          ediyor. Birbirlerinden farklı karakterde olan Phil ve George adındaki
+          iki kardeş, Montana vadisindeki en büyük çiftliğin sahibidir. Zeki ve
+          başarılı bir adam olan Phil, zayıflığı hor görmektedir. Kendisini
+          işine adayan, sessiz bir adam olan George ise sevgi dolu bir ruha
+          sahiptir. İki kardeş yıllarca aynı çatı altında yaşamlarını
+          sürdürmektedir. Ancak onların hayatı, George’un genç dul bir kadınla
+          olan beklenmedik evliliği ile alt üst olur. Phil ise çiftliklerine
+          yerleşen bu kadının varlığından oldukça rahatsızdır. Bu duruma bir son
+          vermek isteyen Phil, kardeşinin eşini ortadan kaldırmak için amansız
+          bir savaşa soyunur.
+        </p>
+      </div>
+    </div>
+    <div class="owl-carousel owl-theme">
+      <div class="item12"></div>
+      <div class="item13">
+        <h1>Masumiyet Müzesi</h1>
+        <p>
+          “Hayatımın en mutlu ânıymış, bilmiyordum.” Nobel ödüllü büyük
+          yazarımız Orhan Pamuk'un harikulade aşk romanı bu sözlerle başlıyor...
+          1975'te bir bahar günü başlayıp günümüze kadar gelen, İstanbullu
+          zengin çocuğu Kemal ile uzak ve yoksul akrabası Füsun'un hikâyesi:
+          Hızı, hareketi, olaylarının ve kahramanlarının zenginliği, mizah
+          duygusu ve insan ruhunun derinliklerindeki fırtınaları hissettirme
+          gücüyle, Masumiyet Müzesi, elinizden bırakamayacağınız ve yeniden
+          okuyacağınız kitaplardan biri olacak. Masumiyet Müzesi'ni okurken
+          yalnız aşk hakkında değil, evlilik, arkadaşlık, cinsellik, tutku, aile
+          ve mutluluk hakkındaki bütün düşüncelerinizin derinden etkilendiğini
+          ve kitabın rengârenk dünyasından hiç ayrılmak istemediğinizi
+          göreceksiniz. Aşağıda bulunan haritadan İstanbul'da bulunan Masumiyet
+          Müzesi'nin konumuna ulaşabilirsiniz.
+        </p>
+      </div>
+      <div class="item14">
+        <h1>Doğu Ekspresi'nde Cinayet</h1>
+        <p>
+          Gece yarısından sonra artan şiddetli tipi yüzünden Doğu Ekspresi artık
+          yoluna devam edemeyecek durumdadır. Yılın bu zamanlarında lüks tren
+          tamamen doludur. Ertesi sabah yapılan kontroller sonucu tüm yolcuların
+          sağsalim trende olduğu anlaşılır. Ancak defalarca bıçaklanarak
+          öldürülen Amerikalı yolcunun kompartımanının kapısı içeriden
+          kilitlidir. Sonunda trende yolculuk etmekte olan Hercule Poirot
+          cinayeti incelemeye başlar. Ancak kimi yolcular cinayetin izlerini yok
+          edebilmek için yaşlı dedektifin dikkatini dağıtmaya çalışırlar.
+          Poirot, kehanet sayılabilecek bir saptamayla cinayeti bir değil iki
+          şekilde çözümlemeyi başarır.
+        </p>
+      </div>
+      <div class="item15">
+        <h1>Suç ve Ceza</h1>
+        <p>
+          Rus ve dünya edebiyatının en önemli eserlerinden biri kabul edilen Suç
+          ve Ceza, Dostoyevski’nin olgunluk çağının bütün ihtişamını sayfalarına
+          sığdırır. Onun gözlem gücü, eleştiriyle kurgusal romanın ahengini
+          yakalama becerisi en çok Suç ve Ceza’da belirginleşir. Raskolnikov’u
+          cinayet işlemeye sürükleyen toplumsal yapıyı ve kahramanın ona taban
+          tabana zıt zihin dünyasını resmeden usta yazar, okurları suçun ahlâki
+          boyutunu sorgulamaya zorluyor. “Sonunda nerede olduğunu hatırlamadan
+          oradan uzaklaştı; meydana ulaştığında tüm bedenini, ruhunu kaplayan
+          müthiş bir duyguya kapıldı. Ansızın Sonya’nın sözlerini hatırladı:
+          ‘Hemen şimdi bir dört yol ağzına koşun, yere kapanın, kirlettiğiniz
+          toprağı öpün ve dünyanın önünde saygıyla eğilerek ‘Ben bir katilim!’
+          diye bağırın!"
+        </p>
+      </div>
+      <div class="item16">
+        <h1>Satranç</h1>
+        <p>
+          Stefan Zweig, en çok okunan eserlerinden olan Satranç’ta, bir geminin
+          seçkin yolcuları üzerinden toplumsal düzenin karmaşasını, bugünün
+          geçmişin izlerini nasıl silinemez şekilde içinde sakladığını ve
+          acımasız siyasi otoritenin yarattığı travmaların beklenmedik
+          sonuçlarını, aklın sınırlarını zorlayan bir dönemin gerçekliği içinde
+          anlatıyor. Satranç şampiyonu Czentovic'te, cehaletin içindeki gizli
+          dehayı; Doktor B.'nin aklının soyut düzleminde oynadığı satrancında
+          ise sessizce katlanılan bir acizliği görüyoruz.
+        </p>
+      </div>
+      <div class="item17">
+        <h1>Milenaya Mektuplar</h1>
+        <p>
+          20. yüzyılın en önemli yazarlarından Frank Kafka, insanın modern
+          zamanlarda nasıl bir hâletiruhiye içinde olduğunu aksettirmesi
+          bakımından gerek döneminde gerekse kendisinden sonra birçok yazarı
+          etkilemiştir. Yazdığı hikâyelerin Çekçeye çevrilmesi için uğraşan
+          Frank Kafka, bir mecliste Milena ile tanışır. Kafka’nın duygusal
+          hayatı Milena ile tanıştıktan sonra büyük oranda değişir ve
+          mektuplarla ilerleyen imkânsız bir aşka dönüşür. Yazdığı mektuplarda
+          Kafka, ilerleyen hastalığına rağmen tüm benliği ve duygularıyla genç
+          Milena’nın karşısına çıkar. Her cümlesinde yaşadığı büyük hayal
+          kırıklıkları, korkuları, öfkesi ve karşılıksız bir sevgiyle büyüttüğü
+          umutları vardır. 20. yüzyılın başındaki sanat hayatından da önemli
+          izler taşıyan bu mektuplar, dünya edebiyatında müstesna bir yere
+          sahiptir.
+        </p>
+      </div>
+    </div>
+    <div id="map"></div>
+    <footer>
+      <div class="footer">
+        <ul>
+          <br />
+          <li>
+            <p>
+              e-mail:
+              <a class="footerA" href="mailto:humeyraaoztrk@gmail.com"
+                >humeyraaoztrk@gmail.com</a
+              >
+            </p>
+          </li>
+          <br />
+          <li>
+            <p>
+              Instagram:
+              <a
+                class="footerA"
+                href="https://www.instagram.com/humeyraaoztrk_/"
+                >humeyraaoztrk_</a
+              >
+            </p>
+          </li>
+          <br />
+          <li>
+            <p>
+              Github:
+              <a class="footerA" href="https://github.com/humeyraaozturk"
+                >humeyraaozturk</a
+              >
+            </p>
+          </li>
+          <br />
+          <li>
+            <p>
+              Linkedin:
+              <a
+                class="footerA"
+                href="https://www.linkedin.com/in/hümeyra-öztürk-922b26264/"
+                >Hümeyra Öztürk</a
+              >
+            </p>
+          </li>
+        </ul>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+    <script src="vendors/jquery.min.js"></script>
+    <script src="owlcarousel/owl.carousel.js"></script>
+    <script>
+      $(".owl-carousel").owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 1,
+          },
+          1000: {
+            items: 1,
+          },
+        },
+      });
+    </script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script>
+      var map = L.map("map").setView([41.0308716, 28.9797952], 20);
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution:
+          '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
+      var marker = L.marker([41.0308716, 28.9797952]).addTo(map);
+    </script>
+  </body>
+</html>

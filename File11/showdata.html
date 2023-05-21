@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alınan Veriler</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar">
+        <a href="home.html" class="active">Hakkımda</a>
+        <a href="resume.html">Özgeçmiş</a>
+        <a href="mycity.html">Şehrim</a>
+        <a href="legacy.html">Mirasımız</a>
+        <a href="interest.html">İlgi Alanlarım</a>
+        <a href="contact.html">İletişim</a>
+        <div class="profile-container">
+          <img class="profile-picture" src="images/profile.jpg" alt="" />
+          <div class="profile-text-container">
+            <span class="profile-text">Hesabım</span>
+            <i class="bi bi-caret-down-fill"></i>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <div class="showdata">
+      <script type="text/javascript">
+        function getParameterByName(name, url) {
+          if (!url) url = window.location.href;
+          name = name.replace(/[\[\]]/g, "\\$&");
+          var regex = new RegExp("[?&]" + name + "(=([^&#]*)|&|#|$)"),
+            results = regex.exec(url);
+          if (!results) return null;
+          if (!results[2]) return "";
+          return decodeURIComponent(results[2].replace(/\+/g, " "));
+        }
+
+        var name = getParameterByName("name");
+        var surname = getParameterByName("surname");
+        var email = getParameterByName("email");
+        var message = getParameterByName("message");
+        var adres = getParameterByName("adres");
+        var date = getParameterByName("date");
+        var sehir = getParameterByName("sehir");
+        var soyisim = getParameterByName("soyisim");
+        var cinsiyet = getParameterByName("cinsiyet");
+      </script>
+      <table class="table">
+     
+        <tbody>
+          <tr>
+            <td><strong> GÖNDERİLEN VERİLER </strong></td>
+          </tr>
+          <tr>
+            <td>İsminiz :</td>
+            <td>
+              <script>
+                document.write(name);
+              </script>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Soyadınız :</td>
+            <td>
+              <script>
+                document.write(surname);
+              </script>
+            </td>
+          </tr>
+
+          <tr>
+            <td>E-Mail :</td>
+            <td>
+              <script>
+                document.write(email);
+              </script>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Mesajınız :</td>
+            <td>
+              <script>
+                document.write(message);
+              </script>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Tam Adresiniz :</td>
+            <td>
+              <script>
+                document.write(adres);
+              </script>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Doğum Tarihiniz :</td>
+            <td>
+              <script>
+                document.write(date);
+              </script>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Yaşadığınız Şehir :</td>
+            <td>
+              <script>
+                document.write(sehir);
+              </script>
+            </td>
+          </tr>
+
+          <tr>
+            <td>Cinsiyet :</td>
+            <td>
+              <script>
+                document.write(cinsiyet);
+              </script>
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" 
+integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" 
+crossorigin="anonymous"></script>
+  </body>
+</html>
